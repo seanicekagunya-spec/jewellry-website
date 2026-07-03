@@ -2,18 +2,8 @@
 <html>
 <head>
     <title>Avaia Jewels-Order</title>
-    <style>
-         h1{
-            color:black;
-            margin-bottom: 15px;
-        }
-
-        nav a{
-            margin: 5px;
-            color: goldenrod;
-            font-weight:normal;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
+   
 
 </head>    
 <body>
@@ -22,6 +12,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="collections.html">Collections</a>
+        <a href="Gallery.html">Gallery</a>
         <a href="Order.html">Order</a>
         <a href="contact.html">Contact Us</a>
     </nav>
@@ -55,10 +46,26 @@
 
 
         <label>Select desired jewelry:</label><br>
-        <input type="checkbox"> Earrings<br>
-        <input type="checkbox"> Necklaces<br>
-        <input type="checkbox"> Bracelets<br>
-        <input type="checkbox"> Rings<br><br>
+         <div class="checkbox-group">
+          <input type="checkbox" id="necklaces" name="jewelry" value="necklaces">
+          <label for="Necklaces">Necklaces</label>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="rings" name="jewelry" value="rings">
+          <label for="Rings">Rings</label>
+        </div>
+       
+        <div class="checkbox-group">
+            <input type="checkbox" id="bracelets" name="jewelry" value="bracelets">
+            <label for="Bracelets">Bracelets</label>
+        </div>
+
+         <div class="checkbox-group">
+            <input type="checkbox" id="earrings" name="jewelry" value="earrings">
+            <label for="Earrings">Earrings</label>
+        </div>
+        
 
         <label>Give description of chosen jewelry:</label><br>
         <textarea name="message" rows="4" cols="50"></textarea>
